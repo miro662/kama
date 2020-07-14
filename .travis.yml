@@ -5,6 +5,7 @@ install:
     - pip install pipenv pytest mypy pylint
     - pipenv install
 script:
-    - python -m pytest .
     - mypy .
-    - pylint .
+    - pylint kama/
+    - pylint tests/
+    - python -m pytest .
