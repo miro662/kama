@@ -2,7 +2,9 @@ language: python
 python:
     - "3.8"
 install:
-    - pip install pipenv pytest
+    - pip install pipenv pytest mypy pylint
     - pipenv install
 script:
     - python -m pytest .
+    - mypy .
+    - pylint .
