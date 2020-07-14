@@ -7,6 +7,6 @@ COPY . /code
 WORKDIR /code
 RUN pipenv install --system --deploy
 
-ENV FLASK_APP=main.py
+ENV FLASK_APP=kama/main.py
 CMD ["flask", "run", "--host", "0.0.0.0"]
 EXPOSE 5000
