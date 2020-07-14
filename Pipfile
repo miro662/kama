@@ -5,9 +5,15 @@ verify_ssl = true
 
 [dev-packages]
 pytest = "*"
+pylint = "*"
+mypy = "*"
+black = "*"
 
 [packages]
 flask = "*"
 
 [requires]
 python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
